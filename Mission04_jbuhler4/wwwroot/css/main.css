@@ -1,0 +1,9 @@
+﻿body {
+    background-color: cornflowerblue;
+    padding: 4rem;
+}
+
+.thisfreakingimage { /*this class does nothing apparently, I had to do this with inline styling.  I freaking hate CSS.*/
+    max-height: 40%;
+    width: auto;
+}
