@@ -1,0 +1,24 @@
+﻿@model CalculatorModel
+@{
+    ViewData["Title"] = "Calculator";
+}
+<h2>Input your grade percentage for each category:</h2>
+<form method="post">
+    <label>Assignments</label>
+    <input id="assignment" type="number" step="0.01" asp-for="Assignment" /><br />
+    <label>Group Project</label>
+    <input id="project" type="number" step="0.01" asp-for="Project" /><br />
+    <label>Quizzes</label>
+    <input id="quiz" type="number" step="0.01" asp-for="Quiz" /><br />
+    <label>Midterm Exam</label>
+    <input id="midterm" type="number" step="0.01" asp-for="Midterm" /><br />
+    <label>Final Exam</label>
+    <input id="final" type="number" step="0.01" asp-for="Final" /><br />
+    <label>INTEX</label>
+    <input id="intex" type="number" step="0.01" asp-for="Intex" /><br />
+    <input id="btnsubmit" type="submit" value="Submit" />
+
+    <div asp-validation-summary="All"></div>
+</form>
+
+<script src="~/js/gradeCalc.js"></script>
